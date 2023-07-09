@@ -1,0 +1,157 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 2%;
+  }
+
+  body, html {
+    background-color:#fcfeff;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  } 
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav_bar {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(184, 227, 238);
+    padding-bottom:10px;
+    padding-top:10px;
+
+    
+
+  }
+
+      h2
+      {
+            color: #000000;
+      }
+
+
+  .main_header {
+    text-align: left;
+    background:#00172D;
+    padding: 1px;
+    font-family: 'Old Standard TT', serif;
+    color: #0c0801;
+    width:100%;
+
+    
+  }
+  
+      h1
+      {
+            color: #7ebbe4;
+      }
+  
+
+  a:link {
+    color: #010e85;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #13116e;
+    text-decoration: overline;
+  }
+  a:active {
+    color: #07062e;
+    text-decoration: none;
+  }
+
+  .section_1 {
+    background-color: #edfafd;
+    width: 45%;
+    height:300px;
+    float: left;
+    text-align: left;
+    margin: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #1f2755;  
+    padding: 1%;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .second_header {
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    color: #187cb9;
+  }
+
+  .section_2 {
+      background-color: #edfafd;
+      width: 44%;
+      height:300px;
+      float: right;
+      text-align: left;
+      margin: 2%;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #1f275A;
+      padding: 1%;
+  }
+
+  .third_header {
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    color: #187cb9;
+  }
+
+  .section_3 {
+    text-align: center;
+    padding: 2%;
+    font-family: 'Old Standard TT', serif;
+    color: #51442A;
+    width: 100%;
+    text-decoration: underline;
+  }
+
+  .star_wars {
+    text-align: center;
+    margin: 4%;
+    font-size: 20px;
+    color: #051a3a;
+  }
+
+  .footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #00172D;
+    text-align: center;
+    clear: both;
+  color: #fff;
+    
+  }
+  
+  
+
+  img {
+    vertical-align: middle;
+  }
+
+  
