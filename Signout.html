@@ -2,6 +2,66 @@
 <html>
 <head>
   <title>Registration Form</title>
+
+  <script>
+    function validateForm2() {
+      var first_name = document.forms["form2"]["first_name"].value;
+      var last_name = document.forms["form2"]["last_name"].value;
+      var age = document.forms["form2"]["age"].value;
+      var phone = document.forms["form2"]["phone"].value;
+      var email = document.forms["form2"]["email"].value;
+      var address = document.forms["form2"]["address"].value;
+      var state = document.forms["form2"]["state"].value;
+      var city = document.forms["form2"]["city"].value;
+      var username = document.forms["form2"]["username"].value;
+      var password = document.forms["form2"]["password"].value;
+      var confirmpassword = document.forms["form2"]["confirmPassword"].value;
+     
+      if (first_name == "" || last_name == "") {
+        alert("Please enter both first name and last name");
+        return false;
+      }
+      if (age == "" ) {
+        alert("Please enter your age");
+        return false;
+      }
+      
+      if (phone.length !=10) {
+        alert("Please enter a valid contact number");
+        return false;
+      }
+      
+      if (email =="") {
+        alert("Please enter valid email ");
+        return false;
+      }
+      if (address == "" || state == ""||city=="") {
+        alert("Please enter your address,state and city");
+        return false;
+      }
+      if (username =="") {
+        alert("Please enter username ");
+        return false;
+       }
+      if (password =="") {
+        alert("Please enter valid password");
+        return false;
+      }
+      if (confirmpassword =="") {
+        alert("please enter password");
+        return false;
+      }
+      else if (confirmpassword !=password) {
+        alert("Entered password is mismatch");
+        return false;
+      
+      }
+      else{
+        alert("password is correct");
+      }
+    }
+  </script>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -50,40 +110,41 @@
       background-color: #45a049;
     }
   </style>
-</head>
-<body>
-  <div class="container">
+
+   </head>
+   <body>
+   <div class="container">
     <h2>Sign Up</h2>
-    <form action="#" method="post">
+    <form action="Register"  name="form2" method="post" onsubmit=" return validateForm2()">
       <label for="first_name">First Name:</label>
-      <input type="text" id="first_name" name="first_name" required>
+      <input type="text" id="first_name" name="first_name" >
 
       <label for="last_name">Last Name:</label>
-      <input type="text" id="last_name" name="last_name" required>
+      <input type="text" id="last_name" name="last_name" >
 
       <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
+      <input type="date" id="dob" name="dob" >
 
       <label for="age">Age:</label>
-      <input type="number" id="age" name="age" required>
+      <input type="number" id="age" name="age" >
 
       <label for="gender">Gender:</label>
-      <input type="radio" id="male" name="gender" value="male" required>
+      <input type="radio" id="male" name="gender" value="male" >
       <label for="male">Male</label>
       <input type="radio" id="female" name="gender" value="female">
       <label for="female">Female</label>
 
       <label for="phone">Phone Number:</label>
-      <input type="text" id="phone" name="phone" required>
+      <input type="text" id="phone" name="phone" >
 
       <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" >
 
       <label for="address">Address:</label>
-      <input type="text" id="address" name="address" required>
+      <input type="text" id="address" name="address" >
 
       <label for="state">State:</label>
-      <select id="state" name="state" required>
+      <select id="state" name="state" >
         <option value="">Select State</option>
         <option value="state1">Kerala</option>
         <option value="state2">Tamilnadu</option>
@@ -91,21 +152,23 @@
       </select>
 
       <label for="city">City:</label>
-      <select id="city" name="city" required>
+      <select id="city" name="city" >
         <option value="">Select City</option>
         <option value="city1">City 1
+          <option value="city1">City 2
+            <option value="city1">City 1
       </select>
     
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
+      <input type="text" id="username" name="username" >
       
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
+      <input type="password" id="password" name="password" >
       
       <label for="confirmPassword">Confirm Password:</label>
-      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <input type="password" id="confirmPassword" name="confirmPassword" >
       
-      <input type="submit" value="Sign Up">
+      <input type="submit" value="Sign up">
     </form>
   </body>
   </html>
